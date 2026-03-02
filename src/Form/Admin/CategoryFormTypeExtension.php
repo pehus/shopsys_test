@@ -31,7 +31,7 @@ final class CategoryFormTypeExtension extends AbstractTypeExtension
         $this->formBuilderHelper->disableFieldsByConfigurations($builder, self::DISABLED_FIELDS);
 
         $builder->add('inputPerCountry', MulticountryType::class, [
-            'mapped' => false,   // jen data z formuláře, nepáruje se do entity Category
+            'mapped' => false,
             'required' => false,
         ]);
     }
