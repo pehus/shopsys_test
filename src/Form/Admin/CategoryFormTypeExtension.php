@@ -33,6 +33,13 @@ final class CategoryFormTypeExtension extends AbstractTypeExtension
         $builder->add('inputPerCountry', MulticountryType::class, [
             'mapped' => false,
             'required' => false,
+            'domain_id' => 1,
+
+            //'entry_type' => TextType::class,
+            'entry_options' => [
+                'required' => false,
+                'data' => false,
+            ],
         ]);
     }
 
